@@ -25,8 +25,8 @@ def zip_extract():
     with zip(path_to_zip_file) as cur_zip:
         cur_zip.extractall(directory_to_extract_to)
         
-def target():
-    fname = os.path.basename(rel_path)
+#def target():
+   # fname = os.path.basename(rel_path)
 
 def target(fname):
     if fname.lower().endswith(".cgi"):
