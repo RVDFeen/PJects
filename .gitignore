@@ -1,4 +1,6 @@
 /extracted_test
-/ftp.py
-/tpm
 /zip_test.zip
+/zip_test
+/__pycache__
+old_filehandler.py
+.gitignore
