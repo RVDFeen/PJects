@@ -7,9 +7,10 @@ ip = "172.16.0.1"
 subnet = "255.255.0.0"
 
 def main():
+    ftp = FTP(ip, user, password, None, 1)
     extract_zip()
     local_dir = get_local_dir()
-    connect_ftp(user, password, ip)
-    upload_files(local_dir)
+    connect_ftp(ftp, user, password)
+    upload_files(local_dir, ftp)
     del_cache()
 main()
