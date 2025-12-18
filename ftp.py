@@ -60,7 +60,7 @@ def upload_files(local_root_dir, ftp):
 def disconnect(ftp):
     try:
         ftp.quit()
-        print("\n\n")
+        #print("\n\n")
     except Exception as e:
-        print(e)
+        ## PLACEHOLDER FOR LOG
         pass
